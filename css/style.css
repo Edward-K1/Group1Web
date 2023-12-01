@@ -34,10 +34,18 @@ nav .nav-title {
     }
 }
 
+/* apply style to medium mobile screens */
+@media screen and (max-width: 415px) {
+    nav a {
+        padding: 8px;
+        font-size: 90%;
+    }
+}
 
 /* apply style to very small mobile screens */
 @media screen and (max-width: 350px) {
     nav a {
         padding: 6px;
+        font-size: 80%;
     }
 }
