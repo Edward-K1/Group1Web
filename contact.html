@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Group 1 - Chaka Demus</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+
+
+
+    </style>
 </head>
     <body>
         <header>
             <nav>
                 <a href="index.html" class="nav-title">Chaka Demus</a>
-                <a href="contact.html" class="nav-contact">Contact</a>
-                <a href="work.html" class="nav-my-work">My Work</a>
+                <a href="contact.html" class="nav-contact active">Contact</a>
+                <a href="work.html" class="nav-my-work">Our Work</a>
                 <a href="about.html" class="nav-about">About</a>
             </nav>
         </header>
 
 
-        <div>This is the contact page</div>
+        <div class="container">
+            <form>
+
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address..">
+
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit">
+
+            </form>
+          </div>
 
         <script src="./js/script.js"></script>
     </body>
