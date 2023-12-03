@@ -5,25 +5,32 @@ nav {
     text-align: right;
     box-sizing: border-box;
     display: block;
-    margin-bottom: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     padding: 10px;
     float:right;
     position: relative;
-    background-color: darkgreen;
-    color: white;
+    /* background-color: darkgreen; */
+    /* color: white; */
     font-weight: bold;
     font-family: 'Courier New', Courier, Arial, monospace;
     border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 110%;
 }
 
 nav .nav-title {
     float: left;
+}
+
+form {
+    padding: 20px;
+    padding-bottom: 200px;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -40,13 +47,23 @@ input[type=submit] {
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #FFF;
     padding: 20px;
     }
 
+.container .contact {
+    padding: unset;
+    border: 1px dashed;
+
+}
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover, nav a:hover, nav a.active {
+input[type=submit]:hover {
     background-color: #45a049;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 #subject {
@@ -66,11 +83,25 @@ input[type=text], textarea {
 }
 
 
+.welcome-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../img/hero-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 890px;
+}
+
 /* apply style to tablet and desktop browsers */
 @media screen and (min-width: 450px) {
     body, html {
         margin: 0;
         padding: 0 20px 0;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
     }
 }
 
