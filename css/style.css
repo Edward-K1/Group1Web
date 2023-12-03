@@ -10,12 +10,9 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    /* border: 1px solid lightgray; */
     padding: 10px;
     float:right;
     position: relative;
-    /* background-color: darkgreen; */
-    /* color: white; */
     font-weight: bold;
     font-family: 'Courier New', Courier, Arial, monospace;
     border-radius: 5px;
@@ -35,7 +32,7 @@ form {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #2B2C2E;;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -58,7 +55,7 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 nav a:hover, nav a.active {
@@ -92,6 +89,49 @@ input[type=text], textarea {
     background-size: cover;
     background-position: center;
     height: 890px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #444;
+    justify-content: center;
+  }
+
+  .portfolio-item {
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    height: 400px;
+    background: url(../img/hero-background.jpg) no-repeat;
+    background-size: cover !important;
+    background-position: center;
+  }
+
+
+  .portfolio-item.one {
+    background: url(../img/gallery/5cb862a89e669427e74dd1d2034c18ef.jpg) no-repeat;
+  }
+
+  .portfolio-item.two {
+    background: url(../img/gallery/hej-its-her-com.webp) no-repeat;
+  }
+
+  .portfolio-item.three {
+    background: url(../img/gallery/screencapture-ringly-2020-10-02-10_32_23-edit.webp) no-repeat;
+  }
+
+  .portfolio-item.four {
+    background: url(../img/gallery/thai-restaurant-website-design-malaysia.webp) no-repeat;
+  }
+
+@media screen and (min-width: 800px) {
+    .portfolio {
+        grid-template-columns: 40% 40%;
+    }
 }
 
 /* apply style to tablet and desktop browsers */
