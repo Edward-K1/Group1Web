@@ -91,7 +91,7 @@ input[type=text], textarea {
     height: 890px;
 }
 
-.portfolio {
+.portfolio, .about-box {
     display: grid;
     grid-template-columns: 100%;
     grid-gap: 20px;
@@ -100,7 +100,7 @@ input[type=text], textarea {
     justify-content: center;
   }
 
-  .portfolio-item {
+  .portfolio-item, .about-box > div:not(.about-description) {
     color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -128,8 +128,27 @@ input[type=text], textarea {
     background: url(../img/gallery/thai-restaurant-website-design-malaysia.webp) no-repeat;
   }
 
+
+  .about-box .about-image {
+    background: url(../img/gallery/about-me.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  section > * {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-box {
+    margin-bottom: 50px;
+  }
+
+  .about-description {
+    background: none !important;
+    color: black
+  }
 @media screen and (min-width: 800px) {
-    .portfolio {
+    .portfolio, .about-box {
         grid-template-columns: 40% 40%;
     }
 }
@@ -141,6 +160,9 @@ input[type=text], textarea {
         padding: 0 20px 0;
         min-height: 100vh;
         display: grid;
+    }
+
+    body:not(.top-content) {
         grid-template-rows: 1fr auto;
     }
 }
